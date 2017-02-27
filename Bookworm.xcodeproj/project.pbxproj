@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F7C1B3F07714A93F478E8E9 /* Pods_Bookworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B44BD79888E1085C4BB74FC /* Pods_Bookworm.framework */; };
 		A1CF80871E644194008D1CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF80861E644194008D1CBF /* AppDelegate.swift */; };
 		A1CF80891E644194008D1CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF80881E644194008D1CBF /* ViewController.swift */; };
 		A1CF808C1E644194008D1CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1CF808A1E644194008D1CBF /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7FB23A9768AAF13B1B8E0E9C /* Pods-Bookworm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookworm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bookworm/Pods-Bookworm.debug.xcconfig"; sourceTree = "<group>"; };
+		9B44BD79888E1085C4BB74FC /* Pods_Bookworm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookworm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CF80831E644194008D1CBF /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CF80861E644194008D1CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1CF80881E644194008D1CBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		A1CF80A21E644194008D1CBF /* BookwormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookwormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CF80A61E644194008D1CBF /* BookwormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormUITests.swift; sourceTree = "<group>"; };
 		A1CF80A81E644194008D1CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3851D70038BEFF280F0CFA6 /* Pods-Bookworm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookworm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bookworm/Pods-Bookworm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7C1B3F07714A93F478E8E9 /* Pods_Bookworm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111F4E21984BD8628E518C88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B44BD79888E1085C4BB74FC /* Pods_Bookworm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AA068C1799539FFB04118FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FB23A9768AAF13B1B8E0E9C /* Pods-Bookworm.debug.xcconfig */,
+				A3851D70038BEFF280F0CFA6 /* Pods-Bookworm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A1CF807A1E644194008D1CBF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				A1CF809A1E644194008D1CBF /* BookwormTests */,
 				A1CF80A51E644194008D1CBF /* BookwormUITests */,
 				A1CF80841E644194008D1CBF /* Products */,
+				7AA068C1799539FFB04118FE /* Pods */,
+				111F4E21984BD8628E518C88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1CF80AB1E644194008D1CBF /* Build configuration list for PBXNativeTarget "Bookworm" */;
 			buildPhases = (
+				7D0786699D84FC8726A662D5 /* [CP] Check Pods Manifest.lock */,
 				A1CF807F1E644194008D1CBF /* Sources */,
 				A1CF80801E644194008D1CBF /* Frameworks */,
 				A1CF80811E644194008D1CBF /* Resources */,
+				0758CB2F7A92308196DF9E50 /* [CP] Embed Pods Frameworks */,
+				BD6031736FE5A79DEDF81DC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +281,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0758CB2F7A92308196DF9E50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bookworm/Pods-Bookworm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D0786699D84FC8726A662D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD6031736FE5A79DEDF81DC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bookworm/Pods-Bookworm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1CF807F1E644194008D1CBF /* Sources */ = {
@@ -411,6 +486,7 @@
 		};
 		A1CF80AC1E644194008D1CBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB23A9768AAF13B1B8E0E9C /* Pods-Bookworm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LH2MDKXA5H;
@@ -424,6 +500,7 @@
 		};
 		A1CF80AD1E644194008D1CBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3851D70038BEFF280F0CFA6 /* Pods-Bookworm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LH2MDKXA5H;
