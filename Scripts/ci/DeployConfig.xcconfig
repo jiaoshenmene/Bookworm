@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  BreadTrip
+//
+//  Created by 王菂 on 15/10/16.
+//  Copyright © 2015年 Beijing Zhixun Innovation Co. Ltd. All rights reserved.
+//
+
+//CODE_SIGN_IDENTITY = iPhone Distribution: Beijing Sogou Technology Development Co., Ltd.
+//DEVELOPMENT_TEAM = TUX63H4XEY
+OTHER_LDFLAGS = -ObjC -all_load

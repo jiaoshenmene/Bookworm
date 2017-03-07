@@ -9,4 +9,6 @@ pod 'Alamofire'
 
 pod 'Masonry'
 pod 'YYModel'
+pod 'Firebase/Core'
+
 end
