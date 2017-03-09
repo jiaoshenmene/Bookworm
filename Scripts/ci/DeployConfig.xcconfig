@@ -8,4 +8,4 @@
 
 //CODE_SIGN_IDENTITY = iPhone Distribution: Beijing Sogou Technology Development Co., Ltd.
 //DEVELOPMENT_TEAM = TUX63H4XEY
-OTHER_LDFLAGS = -ObjC -all_load
+//OTHER_LDFLAGS = -ObjC -all_load

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5F7C1B3F07714A93F478E8E9 /* Pods_Bookworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B44BD79888E1085C4BB74FC /* Pods_Bookworm.framework */; };
+		A1B3F5E41E6E5E6F003E83B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1B3F5E31E6E5E6F003E83B6 /* GoogleService-Info.plist */; };
+		A1B3F5E61E6E69E3003E83B6 /* Start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1B3F5E51E6E69E3003E83B6 /* Start.jpg */; };
+		A1B3F5E91E6E6A30003E83B6 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3F5E81E6E6A30003E83B6 /* LaunchScreenView.swift */; };
+		A1B3F5EB1E6E6B5A003E83B6 /* BWWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3F5EA1E6E6B5A003E83B6 /* BWWelcomeView.swift */; };
+		A1B3F5F41E7142D8003E83B6 /* BWGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3F5F31E7142D8003E83B6 /* BWGuideView.swift */; };
+		A1B3F5F81E7143B3003E83B6 /* HCWGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3F5F71E7143B3003E83B6 /* HCWGuideView.m */; };
 		A1CF80871E644194008D1CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF80861E644194008D1CBF /* AppDelegate.swift */; };
 		A1CF80891E644194008D1CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF80881E644194008D1CBF /* ViewController.swift */; };
 		A1CF808C1E644194008D1CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1CF808A1E644194008D1CBF /* Main.storyboard */; };
@@ -37,6 +43,13 @@
 /* Begin PBXFileReference section */
 		7FB23A9768AAF13B1B8E0E9C /* Pods-Bookworm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookworm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bookworm/Pods-Bookworm.debug.xcconfig"; sourceTree = "<group>"; };
 		9B44BD79888E1085C4BB74FC /* Pods_Bookworm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookworm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B3F5E31E6E5E6F003E83B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1B3F5E51E6E69E3003E83B6 /* Start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Start.jpg; sourceTree = "<group>"; };
+		A1B3F5E81E6E6A30003E83B6 /* LaunchScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		A1B3F5EA1E6E6B5A003E83B6 /* BWWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWelcomeView.swift; sourceTree = "<group>"; };
+		A1B3F5F31E7142D8003E83B6 /* BWGuideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWGuideView.swift; sourceTree = "<group>"; };
+		A1B3F5F61E7143B3003E83B6 /* HCWGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCWGuideView.h; sourceTree = "<group>"; };
+		A1B3F5F71E7143B3003E83B6 /* HCWGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCWGuideView.m; sourceTree = "<group>"; };
 		A1CF80831E644194008D1CBF /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CF80861E644194008D1CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1CF80881E644194008D1CBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +109,48 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A1B3F5E71E6E6A1F003E83B6 /* LaunchScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3F5E81E6E6A30003E83B6 /* LaunchScreenView.swift */,
+				A1B3F5F31E7142D8003E83B6 /* BWGuideView.swift */,
+				A1B3F5EA1E6E6B5A003E83B6 /* BWWelcomeView.swift */,
+			);
+			path = LaunchScreenView;
+			sourceTree = "<group>";
+		};
+		A1B3F5EC1E6E6C00003E83B6 /* BussinessFramework */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3F5ED1E6E705D003E83B6 /* HomeVC */,
+			);
+			path = BussinessFramework;
+			sourceTree = "<group>";
+		};
+		A1B3F5ED1E6E705D003E83B6 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		A1B3F5EE1E714138003E83B6 /* ThirdFramework */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3F5F51E7143B3003E83B6 /* HCWGuideView */,
+			);
+			path = ThirdFramework;
+			sourceTree = "<group>";
+		};
+		A1B3F5F51E7143B3003E83B6 /* HCWGuideView */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3F5F61E7143B3003E83B6 /* HCWGuideView.h */,
+				A1B3F5F71E7143B3003E83B6 /* HCWGuideView.m */,
+			);
+			path = HCWGuideView;
+			sourceTree = "<group>";
+		};
 		A1CF807A1E644194008D1CBF = {
 			isa = PBXGroup;
 			children = (
@@ -121,12 +176,17 @@
 		A1CF80851E644194008D1CBF /* Bookworm */ = {
 			isa = PBXGroup;
 			children = (
+				A1B3F5EE1E714138003E83B6 /* ThirdFramework */,
+				A1B3F5EC1E6E6C00003E83B6 /* BussinessFramework */,
+				A1B3F5E71E6E6A1F003E83B6 /* LaunchScreenView */,
 				A1CF80861E644194008D1CBF /* AppDelegate.swift */,
 				A1CF80881E644194008D1CBF /* ViewController.swift */,
 				A1CF808A1E644194008D1CBF /* Main.storyboard */,
 				A1CF808D1E644194008D1CBF /* Assets.xcassets */,
+				A1B3F5E51E6E69E3003E83B6 /* Start.jpg */,
 				A1CF808F1E644194008D1CBF /* LaunchScreen.storyboard */,
 				A1CF80921E644194008D1CBF /* Info.plist */,
+				A1B3F5E31E6E5E6F003E83B6 /* GoogleService-Info.plist */,
 			);
 			path = Bookworm;
 			sourceTree = "<group>";
@@ -261,8 +321,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1CF80911E644194008D1CBF /* LaunchScreen.storyboard in Resources */,
+				A1B3F5E41E6E5E6F003E83B6 /* GoogleService-Info.plist in Resources */,
 				A1CF808E1E644194008D1CBF /* Assets.xcassets in Resources */,
 				A1CF808C1E644194008D1CBF /* Main.storyboard in Resources */,
+				A1B3F5E61E6E69E3003E83B6 /* Start.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +399,10 @@
 			files = (
 				A1CF80891E644194008D1CBF /* ViewController.swift in Sources */,
 				A1CF80871E644194008D1CBF /* AppDelegate.swift in Sources */,
+				A1B3F5EB1E6E6B5A003E83B6 /* BWWelcomeView.swift in Sources */,
+				A1B3F5E91E6E6A30003E83B6 /* LaunchScreenView.swift in Sources */,
+				A1B3F5F81E7143B3003E83B6 /* HCWGuideView.m in Sources */,
+				A1B3F5F41E7142D8003E83B6 /* BWGuideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
