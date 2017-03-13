@@ -66,8 +66,8 @@ static NSString * const kAppVersion = @"appVersion";
             [self.scrollView addSubview:imageView];
             if (i == self.imageNames.count - 1) {
                 if (!self.enterButtonHidden) {
-                    UIButton *enterButton = [[UIButton alloc] initWithFrame:CGRectMake((kScreenWidth-100)/2, kScreenHeight-40, 100, 30)];
-                    enterButton.titleLabel.font = [UIFont systemFontOfSize:14];
+                    UIButton *enterButton = [[UIButton alloc] initWithFrame:CGRectMake((kScreenWidth-200)/2, kScreenHeight-200, 200, 60)];
+                    enterButton.titleLabel.font = [UIFont systemFontOfSize:20];
                     [enterButton setTitle:@"点击进入" forState:0];
                     [enterButton setTitleColor:[UIColor blackColor] forState:0];
                     [enterButton addTarget:self action:@selector(enterAction) forControlEvents:UIControlEventTouchUpInside];
@@ -94,7 +94,7 @@ static NSString * const kAppVersion = @"appVersion";
     NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
     NSString *currentAppVersion = infoDic[@"CFBundleShortVersionString"];
     NSString *version = [[NSUserDefaults standardUserDefaults] objectForKey:kAppVersion];
-    if (version == nil || ![version isEqualToString:currentAppVersion]) {
+    if (version == nil || ![version isEqualToString:currentAppVersion] || 1) {
         [[NSUserDefaults standardUserDefaults] setObject:currentAppVersion forKey:kAppVersion];
         [[NSUserDefaults standardUserDefaults] synchronize];
         return YES;

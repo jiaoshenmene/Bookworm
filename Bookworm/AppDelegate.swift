@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -23,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             kFIRParameterContentType:"打开app" as NSObject,
             kFIRParameterItemID:"1" as NSObject
             ])
-        
-        BWGuideView.showGuideView(images: [""],window: self.window!)
+        HCWGuideView.show(withImages: ["Start.jpg","Start.jpg","Start.jpg"])
+//        BWGuideView.showGuideView(images: ["Start.jpg","Start.jpg","Start.jpg"],window: self.window!)
         
         
         return true
